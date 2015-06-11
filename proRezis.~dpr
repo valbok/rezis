@@ -1,0 +1,15 @@
+program proRezis;
+
+uses
+  Forms,
+  unMain in 'unMain.pas' {frmMain},
+  unDm in 'unDm.pas' {DM: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TDM, DM);
+  Application.Run;
+end.

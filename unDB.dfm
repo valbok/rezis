@@ -1,0 +1,42 @@
+object frmDB: TfrmDB
+  Left = 192
+  Top = 119
+  Width = 544
+  Height = 375
+  Caption = 'frmDB'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object gridDB: TDBGrid
+    Left = 0
+    Top = 0
+    Width = 536
+    Height = 328
+    Align = alClient
+    DataSource = DM.dsRezis
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'MS Sans Serif'
+    TitleFont.Style = []
+  end
+  object NavigatorDB: TDBNavigator
+    Left = 0
+    Top = 328
+    Width = 536
+    Height = 20
+    DataSource = DM.dsRezis
+    Align = alBottom
+    Flat = True
+    Ctl3D = True
+    ParentCtl3D = False
+    TabOrder = 1
+  end
+end
